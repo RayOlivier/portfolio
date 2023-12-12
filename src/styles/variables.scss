@@ -8,7 +8,6 @@ $desktop: 1024px;
 /*
     COLORS
 */
-//
 $black: #191919;
 $black_90: rgba($black, 0.9);
 $black_80: rgba($black, 0.8);
@@ -33,11 +32,13 @@ $white_20: rgba($white, 0.2);
 $white_10: rgba($white, 0.1);
 
 // https://coolors.co/palette/ffaf87-ff8e72-ed6a5e-4ce0b3-377771
-$primary: #ff8e72;
-$primary_dark: #ed6a5e;
-$primary_light: #ffaf87;
-$secondary: #4ce0b3;
-$secondary_dark: #377771;
+$secondary: #ff8e72;
+$secondary_dark: #ed6a5e;
+$secondary_light: #ffaf87;
+$primary: #4ce0b3;
+$primary_dark: #377771;
 
 $background: rgba($black, 1);
+$nav-shadow: #222222;
+$nav-background: #101010;
 $text: rgba($white, 1);

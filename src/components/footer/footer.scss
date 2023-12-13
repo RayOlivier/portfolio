@@ -1,3 +1,5 @@
+@import '../../index.scss';
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -5,4 +7,17 @@
   font-size: 1.5rem;
   padding: 3rem 1rem 2rem;
   // justify-content: space-around;
+}
+
+.social-links {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  a {
+    color: $secondary;
+
+    &:hover {
+      color: $secondary_light;
+    }
+  }
 }

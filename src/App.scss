@@ -14,27 +14,39 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  min-height: 100vh;
+  // min-height: 100vh;
 }
 
 .section {
-  margin: 2rem 0;
-  // width: 100%;
+  // margin: 0 0;
+  margin-bottom: 2rem;
 }
+
+/*
+/////////////
+  LANDING 
+////////////
+*/
 
 .landing {
   display: flex;
   flex-direction: column;
-  padding: 10rem 4rem;
+  justify-content: center;
+  // padding: 10rem 4rem;
+  // min-height: calc(100vh - $navHeight);
+  height: calc(100vh - 64px); //account for nav
 }
 
 .eyebrow {
   color: $secondary;
   font-weight: bolder;
   font-size: 3rem;
+  font-family: 'Merriweather', serif;
 }
 
 .introduction {
+  font-family: 'Raleway', sans-serif;
+
   span {
     color: $primary;
   }
@@ -42,14 +54,78 @@
 
 .tagline {
   font-size: 3rem;
+  font-family: 'Raleway', sans-serif;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/*
+/////////////
+  SKILLS 
+////////////
+*/
+
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  li {
+    background-color: $primary_dark;
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+}
+
+/*
+/////////////
+  EXPERIENCE 
+////////////
+*/
+
+/*
+/////////////
+  PROJECTS 
+////////////
+*/
+
+/*
+/////////////
+  CONTACT 
+////////////
+*/
+
+.contact {
+  &__email {
+    font-size: 3rem;
+    color: $secondary_dark;
+  }
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  li {
+    font-size: 3rem;
+    // background-color: $white_10;
+    border-radius: 4px;
+    // padding: 0.5rem;
+
+    .contact-link {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
   }
 }
 

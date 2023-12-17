@@ -43,9 +43,12 @@ $white_10: rgba($white, 0.1);
 $primary: #6dfde1;
 $primary_light: lighten($primary, 15%);
 $primary_dark: darken($primary, 50%);
+$primary_dark: #008f72;
+$primary_text: #004134;
 $secondary: #ff8a72;
 $secondary_light: lighten($secondary, 15%);
 $secondary_dark: darken($secondary, 10%);
+$secondary_background: #90635a;
 
 // light theme primary 47e4c1
 // light theme secondary ff542c

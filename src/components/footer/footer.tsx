@@ -12,22 +12,24 @@ const Footer: React.FC<FooterProps> = () => {
     <footer className="footer">
       <ul className="social-links">
         <li>
-          <a href="mailto:rayolivier@outlook.com">
+          <a href="mailto:rayolivier@outlook.com" aria-label="Send me an email">
             <MdEmail size="3rem" />
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/rayolivier/" target="_blank">
+          <a href="https://www.linkedin.com/in/rayolivier/" target="_blank" aria-label="LinkedIn Profile">
             <AiFillLinkedin size="3rem" />
           </a>
         </li>
         <li>
-          <a href="https://github.com/RayOlivier">
+          <a href="https://github.com/RayOlivier" target="_blank" aria-label="Github Profile">
             <AiFillGithub size="3rem" />
           </a>
         </li>
       </ul>
-      Designed and built by Ray Olivier.
+      <p>rayolivier@outlook.com</p>
+
+      <p>Designed and built by Ray Olivier.</p>
     </footer>
   );
 };

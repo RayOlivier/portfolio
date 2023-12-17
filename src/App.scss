@@ -1,10 +1,6 @@
 @import './index.scss';
 
 #root {
-  // max-width: 1280px;
-  // margin: 0 auto;
-  // padding: 2rem;
-  // text-align: center;
   min-height: 100vh;
   min-width: 100vw;
 }
@@ -14,12 +10,15 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  // min-height: 100vh;
+
+  @media (min-width: $desktop) {
+    padding: 2rem 12rem 14rem;
+  }
 }
 
 .section {
-  // margin: 0 0;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+  padding: 0 1rem;
 }
 
 /*
@@ -59,11 +58,11 @@
 
 /*
 /////////////
-  SKILLS 
+  ABOUT 
 ////////////
 */
 
-.skills-content {
+.about__content {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -73,6 +72,11 @@
   }
 }
 
+.about__text {
+  max-width: 700px;
+  font-size: 2.25rem;
+}
+
 .skills-list {
   display: flex;
   flex-wrap: wrap;
@@ -80,6 +84,8 @@
 
   li {
     background-color: $primary_dark;
+    background-color: rgba($primary, 0.5);
+    font-weight: 500;
     padding: 0.5rem;
     border-radius: 4px;
   }
@@ -90,12 +96,48 @@
   EXPERIENCE 
 ////////////
 */
+.date-eyebrow {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Merriweather', serif;
+  color: $primary_light;
+  margin-bottom: 0;
+}
+
+.experience-list {
+  font-size: 2.25rem;
+
+  li {
+    display: flex;
+    gap: 1rem;
+    margin: 0 0 2rem 2rem;
+    line-height: 1.1;
+    max-width: 700px;
+
+    .bullet {
+      color: $secondary_dark;
+      margin-top: 0.25rem;
+    }
+  }
+}
 
 /*
 /////////////
   PROJECTS 
 ////////////
 */
+
+.project-cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  // gap: 1rem;
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+    gap: 6rem;
+  }
+}
 
 /*
 /////////////
@@ -105,7 +147,7 @@
 
 .contact {
   &__email {
-    font-size: 3rem;
+    // font-size: 3rem;
     color: $secondary_dark;
   }
 }
@@ -127,18 +169,4 @@
       gap: 1rem;
     }
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

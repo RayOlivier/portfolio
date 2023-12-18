@@ -6,13 +6,11 @@ import { PiDiamondBold } from 'react-icons/pi';
 import { HiOutlineExternalLink } from 'react-icons/hi';
 import Card from './components/card/card';
 
-// import nextReviewImg from './assets/projects/nextReviews.png';
 import nextReviewImg2 from './assets/projects/nextReviews2.png';
 import portfolioImg from './assets/projects/portfolioSite.png';
 import pixelAdventureImg from './assets/projects/pixelAdventure.png';
 import useMousePosition from './hooks/useMousePosition';
 import useScrollPosition from './hooks/useScrollPosition';
-// import pixelAdventureImg2 from './assets/projects/pixelAdventure2.png';
 
 function App() {
   const mousePosition = useMousePosition();
@@ -34,7 +32,7 @@ function App() {
           <div className="landing">
             <div className="eyebrow">Hi</div>
             <h1 className="introduction">
-              I'm <span>Ray</span> and I make websites.
+              I'm <span>Ray</span> and I build websites.
             </h1>
             <p className="tagline">I'm a front-end engineer with a passion for creating custom, accessible solutions.</p>
           </div>
@@ -45,10 +43,10 @@ function App() {
             <div className="about__text">
               <div>
                 <p>
-                  Since 2019, I've been building custom solutions for clients, ranging from retail to finance. I'm passionate about making the web accessible
+                  Since 2019, I've been delivering custom solutions for clients, ranging from retail to finance. I'm passionate about making the web accessible
                   for everyone.
                 </p>
-                <p>Continuous learning will always be a focus for me. I'm confident that I can master anything you throw at me.</p>
+                <p>I'm quietly confident and always ready to learn new tech, whether it's diving into the backend or learning an entirely new framework.</p>
                 <p>
                   Outside of work, you can probably find me absorbed in an RPG or hanging with my geckos. <GiGecko />
                 </p>
@@ -116,7 +114,7 @@ function App() {
               title="Personal Portfolio"
               githubLink="https://github.com/RayOlivier/portfolio"
               img={portfolioImg}
-              tags={['React', 'TypeScript', 'Vite', 'Sass']}>
+              tags={['React', 'TypeScript', 'Vite', 'Sass', 'Hooks']}>
               This site! A simplistic portfolio built from scratch with React.
             </Card>
             <Card
@@ -133,7 +131,7 @@ function App() {
               href="https://rayolivier.github.io/pixel-adventure/"
               githubLink="https://github.com/RayOlivier/pixel-adventure"
               img={pixelAdventureImg}
-              tags={['Flutter', 'Dart']}>
+              tags={['Flutter', 'Dart', 'Flame', 'Tiled']}>
               A web game demo built within a few weeks of picking up Flutter and Dart.
             </Card>
           </div>

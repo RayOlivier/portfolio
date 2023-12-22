@@ -37,9 +37,9 @@
     align-self: flex-start;
     top: 0;
     left: 0;
-    width: 30%;
+    width: 25%;
     min-width: 40rem;
-    padding: 0 4rem;
+    padding: 0 8rem;
     justify-content: flex-start;
     background-color: $black;
   }
@@ -122,6 +122,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  padding: 0 1rem;
 
   li {
     background-color: $primary_dark;

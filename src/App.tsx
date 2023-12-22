@@ -134,7 +134,6 @@ function App() {
               title="Next Reviews"
               href="https://next-reviews-eta.vercel.app/"
               githubLink="https://github.com/RayOlivier/next-reviews"
-              // imageSrc="assets/projects/nextReviews.png"
               img={nextReviewImg2}
               tags={['NextJS', 'TypeScript', 'Tailwind', 'Strapi CMS']}>
               A review site for indie games and my first foray into NextJS.

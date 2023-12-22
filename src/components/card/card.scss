@@ -49,16 +49,12 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 1rem;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.75rem;
   }
 
   .tag {
-    background-color: #262626;
-    background-color: $secondary;
     background-color: rgba($secondary, 0.8);
-    color: $secondary;
-    color: $black;
+    border: solid thin $white_30;
     color: $white;
     border-radius: 2rem;
     padding: 0.5rem 1rem;
@@ -79,18 +75,29 @@
     gap: 1rem;
 
     cursor: pointer;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    color: $white;
     font-size: 2.5rem;
-    background-color: transparent;
-    background-color: rgba($primary, 0.5);
-    border: none;
-    border-radius: 2px;
+    outline: 0;
+    align-items: center;
+    background-color: $white;
+    color: $black;
+    border: 1px solid $pure_black;
+    border-radius: 4px;
+    cursor: pointer;
+    line-height: 1.5;
+    overflow: hidden;
+    padding: 1.5rem 2rem;
     padding: 1rem;
+    transition: all 0.2s ease-out;
+    white-space: nowrap;
 
     &:hover {
-      background-color: rgba($primary, 0.3);
+      box-shadow: 0.5rem 0.5rem 0 $pure_black;
+      transform: translate(-0.5rem, -0.5rem);
+    }
+
+    &:focus {
+      outline-offset: 1px;
+      outline: 0.25rem solid $secondary;
     }
   }
 }

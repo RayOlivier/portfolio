@@ -1,6 +1,5 @@
 import './App.scss';
 import Footer from './components/footer/footer';
-import Nav from './components/nav/nav';
 import { GiGecko } from 'react-icons/gi';
 import { PiDiamondBold } from 'react-icons/pi';
 import { HiOutlineExternalLink } from 'react-icons/hi';
@@ -11,35 +10,42 @@ import portfolioImg from './assets/projects/portfolioSite.png';
 import pixelAdventureImg from './assets/projects/pixelAdventure.png';
 import useMousePosition from './hooks/useMousePosition';
 import useScrollPosition from './hooks/useScrollPosition';
+import SocialLinks from './components/social-links/social-links';
 
 function App() {
   const mousePosition = useMousePosition();
   const scrollPosition = useScrollPosition();
 
   return (
-    <>
-      <Nav></Nav>
-      <main
-        className="main"
-        style={
-          mousePosition.x && mousePosition.y
-            ? {
-                background: `radial-gradient(800px at ${mousePosition.x}px ${scrollPosition + mousePosition.y}px, rgba(100, 100, 100, 0.15), transparent 80%)`
-              }
-            : {}
-        }>
-        <section className="section">
-          <div className="landing">
-            <div className="eyebrow">Hi</div>
-            <h1 className="introduction">
-              I'm <span>Ray</span> and I build websites.
-            </h1>
-            <p className="tagline">I'm a front-end engineer with a passion for creating custom, accessible solutions.</p>
+    <div
+      className="app"
+      style={
+        mousePosition.x && mousePosition.y
+          ? {
+              // desktop
+              background: `radial-gradient(800px at ${mousePosition.x}px ${scrollPosition + mousePosition.y}px, rgba(100, 100, 100, 0.15), transparent 70%)`
+            }
+          : {
+              // no mouse, mobile
+              background: `radial-gradient(300px at 0px ${scrollPosition + 50}px, rgba(100, 100, 100, 0.15), transparent 80%)`
+            }
+      }>
+      <header className="header">
+        <div className="landing">
+          <div className="eyebrow">Hi,</div>
+          <h1 className="introduction">
+            I'm <span>Ray</span> and I build websites.
+          </h1>
+          <p className="tagline">I'm a front-end engineer with a passion for creating custom, accessible solutions.</p>
+          <div className="header__links">
+            <SocialLinks size="4rem"></SocialLinks>
           </div>
-        </section>
+        </div>
+      </header>
+      <main className="main">
         <section className="section about">
           <h2>About me</h2>
-          <div className="about__content">
+          <div className="section__content about__content">
             <div className="about__text">
               <div>
                 <p>
@@ -57,11 +63,14 @@ function App() {
               <ul className="skills-list">
                 <li>JavaScript</li>
                 <li>TypeScript</li>
-                <li>React</li>
+                <li>React.js</li>
+                <li>Express.js</li>
+                <li>Node.js</li>
                 <li>Angular</li>
-                <li>NextJS</li>
-                <li>Unit Testing</li>
+                <li>Next.js</li>
+                <li>Testing</li>
                 <li>Accessibility</li>
+                <li>Semantic HTML</li>
                 <li>CSS & Sass</li>
               </ul>
             </div>
@@ -69,21 +78,21 @@ function App() {
         </section>
         <section className="section">
           <h2>Experience</h2>
-          <div>
-            <p className="date-eyebrow">2019 - 2023</p>
+          <div className="section__content">
+            <p className="date-eyebrow">Jan 2019 - Dec 2023</p>
             <h3>Stellar Elements (projekt202)</h3>
             <ul className="experience-list">
               <li>
                 <div className="bullet">
                   <PiDiamondBold />
                 </div>{' '}
-                Consulting for a variety of clients to deliver high-quality production code.
+                Consulting for large clients across industries to deliver robust production code and user experiences.
               </li>
               <li>
                 <div className="bullet">
                   <PiDiamondBold />
                 </div>
-                Collaborating with UX designers, project management, and product owners to fulfill business requirements.
+                Collaborating with UX designers, developers, project management, and product owners to fulfill business requirements.
               </li>
               <li>
                 <div className="bullet">
@@ -95,20 +104,24 @@ function App() {
                 <div className="bullet">
                   <PiDiamondBold />
                 </div>
-                Founding and maintaining a component library with both React and Angular versions for one of the largest financial groups in the world.
+                Founding and maintaining a component library supporting both React and Angular for one of the largest financial groups in the world.
               </li>
             </ul>
           </div>
         </section>
         <section className="section">
           <h2>Projects</h2>
-          <p>
-            You can find my most recent work pinned on{' '}
-            <a href="https://github.com/RayOlivier" target="_blank">
-              {' '}
-              Github <HiOutlineExternalLink />
-            </a>
-          </p>
+          <div className="section__content">
+            <p>
+              You can find my most recent work pinned on{' '}
+              <a href="https://github.com/RayOlivier" target="_blank">
+                {' '}
+                Github <HiOutlineExternalLink />
+              </a>
+              <br />
+              <br />
+            </p>
+          </div>
           <div className="project-cards">
             <Card
               title="Personal Portfolio"
@@ -138,14 +151,19 @@ function App() {
         </section>
         <section className="section contact">
           <h2>Contact</h2>
-          <p>
-            Whether you have an opportunity or just want to chat, my inbox is always open! Let's{' '}
-            <a href="https://www.linkedin.com/in/rayolivier/">connect on LinkedIn</a> or <a href="mailto:rayolivier@outlook.com">shoot me an email</a>.
-          </p>
+          <div className="section__content">
+            <p>
+              Whether you have an opportunity or just want to chat, my inbox is always open!
+              <br />
+              Let's <a href="https://www.linkedin.com/in/rayolivier/">connect on LinkedIn</a>, or <a href="mailto:rayolivier@outlook.com">shoot me an email</a>!
+            </p>
+          </div>
         </section>
+        <Footer>
+          <SocialLinks></SocialLinks>
+        </Footer>
       </main>
-      <Footer> </Footer>
-    </>
+    </div>
   );
 }
 

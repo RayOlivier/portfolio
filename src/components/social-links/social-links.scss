@@ -1,0 +1,14 @@
+@import '../../index.scss';
+
+.social-links {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  a {
+    color: $secondary;
+
+    &:hover {
+      color: $secondary_light;
+    }
+  }
+}

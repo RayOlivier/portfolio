@@ -36,15 +36,13 @@ const Card: React.FC<CardProps> = ({ children, href, img, githubLink, tags, titl
           <p>{children}</p>
           <div className="project-card__buttons">
             {href && (
-              <a href={href} target="_blank">
-                <button>Demo</button>
+              <a className="button-link" href={href} target="_blank">
+                Demo
               </a>
             )}
-            <a href={githubLink} target="_blank">
-              <button>
-                Github
-                <AiFillGithub />
-              </button>
+            <a className="button-link" href={githubLink} target="_blank">
+              Github
+              <AiFillGithub />
             </a>
           </div>
         </div>

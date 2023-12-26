@@ -34,9 +34,9 @@ function App() {
         <div className="landing">
           <div className="eyebrow">Hi,</div>
           <h1 className="introduction">
-            I'm <span>Ray</span>
+            I'm <span className="primary">Ray</span>
             <br />
-            and I build solutions.
+            and I build <span className="bold">solutions.</span>
           </h1>
 
           <p className="tagline">I'm a front-end engineer passionate about creating custom, accessible software.</p>

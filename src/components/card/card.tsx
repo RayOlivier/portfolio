@@ -30,8 +30,6 @@ const Card: React.FC<CardProps> = ({ children, href, img, githubLink, tags, titl
         </div>
       )}
       <div className="project-card__content">
-        <div>{/* <h3 className="project-card__title">{title}</h3> */}</div>
-
         <div>
           <p>{children}</p>
           <div className="project-card__buttons">

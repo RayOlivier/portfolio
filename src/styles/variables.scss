@@ -19,7 +19,6 @@ $black_30: rgba($black, 0.3);
 $black_20: rgba($black, 0.2);
 $black_10: rgba($black, 0.1);
 
-// $white: #fff;
 $white: #f5f5f5;
 $white_90: rgba($white, 0.9);
 $white_80: rgba($white, 0.8);
@@ -34,27 +33,14 @@ $white_10: rgba($white, 0.1);
 $pure_black: #000;
 $pure_white: #fff;
 
-// https://coolors.co/palette/ffaf87-ff8e72-ed6a5e-4ce0b3-377771
-// $secondary: #ff8e72;
-// $secondary_dark: #ed6a5e;
-// $secondary_light: #ffaf87;
-// $secondary_background: #ed6a5e;
-// $primary: #4ce0b3;
-// $primary_dark: #377771;
-// $primary_background: #377771;
-
 $primary: #6dfde1;
 $primary_light: lighten($primary, 15%);
-$primary_dark: darken($primary, 50%);
 $primary_dark: #008f72;
 $primary_text: #004134;
 $secondary: #ff8a72;
 $secondary_light: lighten($secondary, 15%);
 $secondary_dark: darken($secondary, 10%);
 $secondary_background: #90635a;
-
-// light theme primary 47e4c1
-// light theme secondary ff542c
 
 $background: rgba($black, 1);
 $nav-shadow: #222222;

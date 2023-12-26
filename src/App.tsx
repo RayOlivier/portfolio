@@ -5,9 +5,9 @@ import { PiDiamondBold } from 'react-icons/pi';
 import { HiOutlineExternalLink } from 'react-icons/hi';
 import Card from './components/card/card';
 
-import nextReviewImg2 from './assets/projects/nextReviews2.png';
-import portfolioImg from './assets/projects/portfolioSite.png';
-import pixelAdventureImg from './assets/projects/pixelAdventure.png';
+import nextReviewImg2 from './assets/images/projects/nextReviews2.png';
+import portfolioImg from './assets/images/projects/portfolioSite.png';
+import pixelAdventureImg from './assets/images/projects/pixelAdventure.png';
 import useMousePosition from './hooks/useMousePosition';
 import useScrollPosition from './hooks/useScrollPosition';
 import SocialLinks from './components/social-links/social-links';

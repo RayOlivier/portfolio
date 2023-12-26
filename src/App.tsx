@@ -34,9 +34,13 @@ function App() {
         <div className="landing">
           <div className="eyebrow">Hi,</div>
           <h1 className="introduction">
-            I'm <span>Ray</span> and I build websites.
+            I'm <span>Ray</span>
+            <br />
+            and I build solutions.
           </h1>
-          <p className="tagline">I'm a front-end engineer with a passion for creating custom, accessible solutions.</p>
+
+          <p className="tagline">I'm a front-end engineer passionate about creating custom, accessible software.</p>
+
           <div className="header__links">
             <SocialLinks size="4rem"></SocialLinks>
           </div>
@@ -49,10 +53,10 @@ function App() {
             <div className="about__text">
               <div>
                 <p>
-                  Since 2019, I've been delivering custom solutions for clients, ranging from retail to finance. I'm passionate about making the web accessible
-                  for everyone.
+                  For the past 5 years, I've been delivering custom solutions to clients across industries. My goal is to exceed both deadlines and
+                  expectations, while still prioritizing accessibility.
                 </p>
-                <p>I'm quietly confident and always ready to learn new tech, whether it's diving into the backend or learning an entirely new framework.</p>
+                <p>I'm quietly confident and always ready to learn new tech, whether it's diving into the backend or mastering a new framework.</p>
                 <p>
                   Outside of work, you can probably find me absorbed in an RPG or hanging with my geckos. <GiGecko />
                 </p>
@@ -69,9 +73,10 @@ function App() {
                 <li>Angular</li>
                 <li>Next.js</li>
                 <li>Testing</li>
-                <li>Accessibility</li>
+                <li>Web Accessibility</li>
                 <li>Semantic HTML</li>
                 <li>CSS & Sass</li>
+                <li>Agile Methodology</li>
               </ul>
             </div>
           </div>
@@ -86,25 +91,25 @@ function App() {
                 <div className="bullet">
                   <PiDiamondBold />
                 </div>{' '}
-                Consulting for large clients across industries to deliver robust production code and user experiences.
+                Consulting for Fortune 500 clients across industries to deliver custom solutions and user experiences utilizing React.js and Angular.
               </li>
               <li>
                 <div className="bullet">
                   <PiDiamondBold />
                 </div>
-                Collaborating with UX designers, developers, project management, and product owners to fulfill business requirements.
+                Delivered a new print document visualizer for a Fortune 500 company in time for the retirement of Adobe Flash.
               </li>
               <li>
                 <div className="bullet">
                   <PiDiamondBold />
                 </div>
-                Delivering a new print document visualizer for a Fortune 500 company in time for the retirement of Adobe Flash.
+                Founding and maintaining a greenfield component library supporting both React and Angular for one of the largest financial groups in the world.
               </li>
               <li>
                 <div className="bullet">
                   <PiDiamondBold />
                 </div>
-                Founding and maintaining a component library supporting both React and Angular for one of the largest financial groups in the world.
+                Collaborating with UX designers, developers, project management, and product owners on agile teams to fulfill business requirements.
               </li>
             </ul>
           </div>
@@ -152,9 +157,11 @@ function App() {
           <h2>Contact</h2>
           <div className="section__content">
             <p>
-              Whether you have an opportunity or just want to chat, my inbox is always open!
+              Whether you have an opportunity or just want to chat, my inbox is open!
               <br />
-              Let's <a href="https://www.linkedin.com/in/rayolivier/">connect on LinkedIn</a>, or <a href="mailto:rayolivier@outlook.com">shoot me an email</a>!
+              <br />
+              Let's <a href="https://www.linkedin.com/in/rayolivier/">connect on LinkedIn</a>, or feel free to{' '}
+              <a href="mailto:rayolivier@outlook.com">shoot me an email</a>!
             </p>
           </div>
         </section>

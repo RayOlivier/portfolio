@@ -56,7 +56,7 @@ function App() {
                   For the past 5 years, I've been delivering custom solutions to clients across industries. My goal is to exceed both deadlines and
                   expectations, while still prioritizing accessibility.
                 </p>
-                <p>I'm quietly confident and always ready to learn new tech, whether it's diving into the backend or mastering a new framework.</p>
+                <p>I'm quietly confident and always ready to learn new tech, whether I'm diving into the backend or mastering a new framework.</p>
                 <p>
                   Outside of work, you can probably find me absorbed in an RPG or hanging with my geckos. <GiGecko />
                 </p>
@@ -91,7 +91,7 @@ function App() {
                 <div className="bullet">
                   <PiDiamondBold />
                 </div>{' '}
-                Consulting for Fortune 500 clients across industries to deliver custom solutions and user experiences utilizing React.js and Angular.
+                Consulted for Fortune 500 clients across industries to deliver custom solutions and user experiences, utilizing React.js and Angular.
               </li>
               <li>
                 <div className="bullet">
@@ -103,13 +103,13 @@ function App() {
                 <div className="bullet">
                   <PiDiamondBold />
                 </div>
-                Founding and maintaining a greenfield component library supporting both React and Angular for one of the largest financial groups in the world.
+                Founded and maintained a greenfield component library supporting both React and Angular for one of the largest financial groups in the world.
               </li>
               <li>
                 <div className="bullet">
                   <PiDiamondBold />
                 </div>
-                Collaborating with UX designers, developers, project management, and product owners on agile teams to fulfill business requirements.
+                Collaborated with UX designers, developers, project management, and product owners on agile teams to fulfill business requirements.
               </li>
             </ul>
           </div>

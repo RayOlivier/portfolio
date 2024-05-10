@@ -7,7 +7,8 @@ import Card from './components/card/card';
 
 import nextReviewImg2 from './assets/images/projects/nextReviews2.png';
 import portfolioImg from './assets/images/projects/portfolioSite.png';
-import pixelAdventureImg from './assets/images/projects/pixelAdventure.png';
+import dataifyImg from './assets/images/projects/dataifyDance.png';
+import rayGPTImg from './assets/images/projects/rayGPT.png';
 import useMousePosition from './hooks/useMousePosition';
 import useScrollPosition from './hooks/useScrollPosition';
 import SocialLinks from './components/social-links/social-links';
@@ -39,7 +40,7 @@ function App() {
             and I build <span className="bold">solutions.</span>
           </h1>
 
-          <p className="tagline">I'm a front-end engineer passionate about creating custom, accessible software.</p>
+          <p className="tagline">I'm a front-end engineer with a passion for creating custom, accessible software and continuous learning.</p>
 
           <div className="header__links">
             <SocialLinks size="4rem"></SocialLinks>
@@ -68,14 +69,11 @@ function App() {
                 <li>JavaScript</li>
                 <li>TypeScript</li>
                 <li>React.js</li>
-                <li>Express.js</li>
-                <li>Node.js</li>
                 <li>Angular</li>
-                <li>Next.js</li>
-                <li>Testing</li>
+                <li>NextJS</li>
                 <li>Web Accessibility</li>
                 <li>Semantic HTML</li>
-                <li>CSS & Sass</li>
+                <li>CSS & SCSS</li>
                 <li>Agile Methodology</li>
               </ul>
             </div>
@@ -85,7 +83,7 @@ function App() {
           <h2>Experience</h2>
           <div className="section__content">
             <p className="date-eyebrow">Jan 2019 - Dec 2023</p>
-            <h3>Stellar Elements (projekt202)</h3>
+            <h3>projekt202 (Stellar Elements)</h3>
             <ul className="experience-list">
               <li>
                 <div className="bullet">
@@ -128,11 +126,22 @@ function App() {
             </p>
           </div>
           <div className="project-cards">
+            <Card title="Dataify" githubLink="https://github.com/RayOlivier/dataify" img={dataifyImg} tags={['React', 'TypeScript', 'Node.js', 'Express.js']}>
+              Spotify Dashboard: A full stack app built on React, Node, and Express that visualizes your Spotify data.
+            </Card>
+            <Card
+              title="RayGPT"
+              href="https://ray-gpt.vercel.app/"
+              githubLink="https://github.com/RayOlivier/rayGPT"
+              img={rayGPTImg}
+              tags={['NextJS', 'MongoDB', 'Auth0', 'TypeScript', 'Tailwind CSS']}>
+              A chatGPT clone built with Next.js and React, except it really likes to talk about geckos.
+            </Card>
             <Card
               title="Personal Portfolio"
               githubLink="https://github.com/RayOlivier/portfolio"
               img={portfolioImg}
-              tags={['React', 'TypeScript', 'Vite', 'Sass', 'Hooks']}>
+              tags={['React', 'TypeScript', 'Vite', 'SCSS', 'Hooks']}>
               This site! A simplistic portfolio built from scratch with React.
             </Card>
             <Card
@@ -140,16 +149,8 @@ function App() {
               href="https://next-reviews-eta.vercel.app/"
               githubLink="https://github.com/RayOlivier/next-reviews"
               img={nextReviewImg2}
-              tags={['NextJS', 'TypeScript', 'Tailwind', 'Strapi CMS']}>
+              tags={['NextJS', 'TypeScript', 'Tailwind CSS', 'Strapi CMS']}>
               A review site for indie games and my first foray into NextJS.
-            </Card>
-            <Card
-              title="Pixel Adventure"
-              href="https://rayolivier.github.io/pixel-adventure/"
-              githubLink="https://github.com/RayOlivier/pixel-adventure"
-              img={pixelAdventureImg}
-              tags={['Flutter', 'Dart', 'Flame', 'Tiled']}>
-              A web game demo built within a few weeks of picking up Flutter and Dart.
             </Card>
           </div>
         </section>
